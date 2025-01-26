@@ -5,21 +5,21 @@
 class Gopublish < Formula
   desc "Software to create fast and easy drum rolls."
   homepage ""
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hadlow/gopublish/releases/download/v1.0.0/hadlow-gopublish_Darwin_x86_64.tar.gz"
-      sha256 "6d570191ae0fc5a2d1fdf4997448a728f7fefdb169e57da687ba8ec81145e697"
+      url "https://github.com/hadlow/gopublish/releases/download/v1.0.1/gopublish_Darwin_x86_64.tar.gz"
+      sha256 "a32c8840bc71ac88b3e7a8017355d3b3a0c3f0d8f1ca7b92b64db084f8f299a9"
 
       def install
         bin.install "gopublish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hadlow/gopublish/releases/download/v1.0.0/hadlow-gopublish_Darwin_arm64.tar.gz"
-      sha256 "2aa0fcb36b8fb6607a4e37d3466f08ebfe27ba9e5d3d1f38e9948e3ac5d24a7d"
+      url "https://github.com/hadlow/gopublish/releases/download/v1.0.1/gopublish_Darwin_arm64.tar.gz"
+      sha256 "b13de9cf3f3eae752347c0849d2c0f9e1cb1edee40029db49c62b1c4ed2b02b4"
 
       def install
         bin.install "gopublish"
@@ -30,8 +30,8 @@ class Gopublish < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hadlow/gopublish/releases/download/v1.0.0/hadlow-gopublish_Linux_x86_64.tar.gz"
-        sha256 "8b080db8c1d3af46d350acce288dc2ad2519142f4e8987a2fea318c2b8c300af"
+        url "https://github.com/hadlow/gopublish/releases/download/v1.0.1/gopublish_Linux_x86_64.tar.gz"
+        sha256 "0674ea50ad8c44075d684fc7ae2da82969247e09ebf718ebcb3a8b197eb92616"
 
         def install
           bin.install "gopublish"
@@ -40,8 +40,8 @@ class Gopublish < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hadlow/gopublish/releases/download/v1.0.0/hadlow-gopublish_Linux_arm64.tar.gz"
-        sha256 "16696d381e78cdbd7fcc8fff24382461aa8cc54d6fc08611b858d81451b354f8"
+        url "https://github.com/hadlow/gopublish/releases/download/v1.0.1/gopublish_Linux_arm64.tar.gz"
+        sha256 "0a3d45c2b18106c35a30880b2b32088c90eba7c9d60430f58afb4903fe26d29c"
 
         def install
           bin.install "gopublish"
